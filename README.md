@@ -1,6 +1,6 @@
-# fish_redux_demo
+# Fish Redux Simple Example
 
-A new Flutter application.
+This a simple example show how to use [fish-redux:https://github.com/alibaba/fish-redux] to implement the Flutter counter template App.
 
 ## Getting Started
 
