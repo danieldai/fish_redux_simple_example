@@ -9,7 +9,7 @@ Widget buildView(
   ViewService viewService,
 ) {
   return MaterialApp(
-    title: 'Fish Redux Demo',
+    title: 'Fish Redux Simple Example',
     theme: ThemeData(
       // This is the theme of your application.
       //

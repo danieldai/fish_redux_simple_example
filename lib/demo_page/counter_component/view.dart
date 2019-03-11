@@ -11,7 +11,7 @@ Widget buildView(
 ) {
   return Scaffold(
     appBar: AppBar(
-      title: Text("Fish Redux demo"),
+      title: Text("Fish Redux Simple Example"),
     ),
     body: Center(
       child: Column(
