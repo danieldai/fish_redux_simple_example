@@ -16,7 +16,12 @@ class DemoPage extends Page<PageState, Map<String, dynamic>> {
                 'counter': CounterConnector() + CounterComponent()
               }),
           middlewares: <Middleware<PageState>>[
-            logMiddleware(tag: 'DemoPage'),
+            logMiddleware(
+              tag: 'DemoPage',
+              monitor: (PageState state) {
+                return state?.counterState?.counter?.toString();
+              },
+            ),
           ],
         );
 }

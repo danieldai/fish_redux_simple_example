@@ -30,7 +30,7 @@ Widget buildView(
     floatingActionButton: FloatingActionButton(
       onPressed: () {
         dispatch(
-            CounterActionCreator.updateCounterAction(state?.counter ?? 0 + 1));
+            CounterActionCreator.updateCounterAction((state?.counter ?? 0) + 1));
       },
       tooltip: 'Increment',
       child: Icon(Icons.add),
