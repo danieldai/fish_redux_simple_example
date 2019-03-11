@@ -21,7 +21,7 @@ Widget buildView(
             'You have pushed the button this many times:',
           ),
           Text(
-            '${state?.counter}',
+            '${state?.counter ?? 0}',
             style: Theme.of(viewService.context).textTheme.display1,
           ),
         ],
@@ -29,7 +29,8 @@ Widget buildView(
     ),
     floatingActionButton: FloatingActionButton(
       onPressed: () {
-        dispatch(CounterActionCreator.updateCounterAction(state.counter + 1));
+        dispatch(
+            CounterActionCreator.updateCounterAction(state?.counter ?? 0 + 1));
       },
       tooltip: 'Increment',
       child: Icon(Icons.add),

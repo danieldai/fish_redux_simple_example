@@ -16,7 +16,7 @@ class DemoPage extends Page<PageState, Map<String, dynamic>> {
                 'counter': CounterConnector() + CounterComponent()
               }),
           middlewares: <Middleware<PageState>>[
-            logMiddleware(tag: 'ToDoListPage'),
+            logMiddleware(tag: 'DemoPage'),
           ],
         );
 }
